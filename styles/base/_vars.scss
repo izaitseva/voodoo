@@ -1,0 +1,37 @@
+@import "https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap";
+
+// Colors
+$primary-bg-color: #fcf7e6;
+$footer-bg-color: #ffffff;
+$primary-text-color: #000000;
+$btn-text-color: #ffffff;
+$btn-bg-color: #000000;
+
+// Fonts
+$body-font: "Space Grotesk", sans-serif;
+
+// Margins and padding
+$default-margin: 10px;
+$default-padding: 5px;
+
+// Breakpoints
+$mobile-breakpoint: 390px;
+$tablet-breakpoint: 990px;
+$desktop-breakpoint: 1512px;
+
+body {
+  font-family: "Space Grotesk", sans-serif;
+  color: $primary-text-color;
+  background-color: $primary-bg-color;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  background-color: $btn-bg-color;
+  border: none;
+  color: $btn-text-color;
+}
