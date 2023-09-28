@@ -115,8 +115,9 @@ button:hover {
 }
 
 .main-container {
-  margin-top: 100px;
-  margin-bottom: 196px;
+  padding-top: 100px;
+  padding-bottom: 196px;
+  margin: auto;
 }
 
 .card-list {
@@ -124,6 +125,9 @@ button:hover {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 18px;
+  margin-top: 48px;
+  margin-bottom: 48px;
 }
 .card-list__item {
   border: 1px solid #000000;

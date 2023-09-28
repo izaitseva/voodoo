@@ -1,6 +1,7 @@
 .main-container {
-  margin-top: 100px;
-  margin-bottom: 196px;
+  padding-top: 100px;
+  padding-bottom: 196px;
+  margin: auto;
 }
 
 .card-list {
@@ -8,6 +9,9 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 18px;
+  margin-top: 48px;
+  margin-bottom: 48px;
 
   &__item {
     border: 1px solid $primary-color;
