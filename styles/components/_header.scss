@@ -1,0 +1,30 @@
+.header-container {
+  margin-top: 48px;
+  padding-bottom: 48px;
+  border-bottom: 1px solid $primary-color;
+}
+
+.header-content-container {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  max-width: 1330px;
+}
+
+.logo-container {
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.shopping-container {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+
+.signiUp-btn {
+  font-size: 20px;
+  font-weight: 700;
+  width: 101px;
+  height: 38px;
+}

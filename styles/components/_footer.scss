@@ -3,8 +3,14 @@
   padding-top: 84px;
   padding-bottom: 85px;
   background-color: $footer-bg-color;
+  border-top: 1px solid $primary-color;
+}
+
+.footer-content-container {
+  margin: auto;
   display: flex;
   justify-content: space-evenly;
+  max-width: 1272px;
 }
 
 .footer-list {
@@ -23,5 +29,5 @@
 }
 
 .footer-logo {
-    align-items: center;
+  align-items: center;
 }

@@ -1,5 +1,6 @@
 @import "https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap";
 body {
+  margin: 0 auto;
   font-family: "Space Grotesk", sans-serif;
   color: #000000;
   background-color: #fcf7e6;
@@ -15,6 +16,9 @@ a {
   text-decoration: none;
   cursor: pointer;
 }
+a:hover {
+  color: #616161;
+}
 
 ul {
   padding: 0;
@@ -28,8 +32,53 @@ li {
 
 button {
   background-color: #000000;
-  border: none;
+  border-color: transparent;
   color: #ffffff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #616161;
+}
+
+.main-container {
+  width: 100%;
+}
+@media (min-width: 1512px) {
+  .main-container {
+    max-width: 1272px;
+  }
+}
+
+.header-container {
+  margin-top: 48px;
+  padding-bottom: 48px;
+  border-bottom: 1px solid #000000;
+}
+
+.header-content-container {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  max-width: 1330px;
+}
+
+.logo-container {
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.shopping-container {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+
+.signiUp-btn {
+  font-size: 20px;
+  font-weight: 700;
+  width: 101px;
+  height: 38px;
 }
 
 .footer-container {
@@ -37,8 +86,14 @@ button {
   padding-top: 84px;
   padding-bottom: 85px;
   background-color: #ffffff;
+  border-top: 1px solid #000000;
+}
+
+.footer-content-container {
+  margin: auto;
   display: flex;
   justify-content: space-evenly;
+  max-width: 1272px;
 }
 
 .footer-list {

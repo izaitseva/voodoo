@@ -4,9 +4,10 @@
 $primary-bg-color: #fcf7e6;
 $footer-bg-color: #ffffff;
 $primary-text-color: #000000;
+$primary-color: #000000;
 $btn-text-color: #ffffff;
 $btn-bg-color: #000000;
-
+$hover-color: #616161;
 // Fonts
 $body-font: "Space Grotesk", sans-serif;
 
@@ -20,6 +21,8 @@ $tablet-breakpoint: 990px;
 $desktop-breakpoint: 1512px;
 
 body {
+  margin: 0 auto;
+
   font-family: "Space Grotesk", sans-serif;
   color: $primary-text-color;
   background-color: $primary-bg-color;
@@ -34,6 +37,10 @@ a {
   color: $primary-text-color;
   text-decoration: none;
   cursor: pointer;
+
+  &:hover {
+    color: $hover-color;
+  }
 }
 
 ul {
@@ -48,6 +55,20 @@ li {
 
 button {
   background-color: $btn-bg-color;
-  border: none;
+  border-color: transparent;
   color: $btn-text-color;
+  border-radius: 4px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $hover-color;
+  }
+}
+
+.main-container {
+  width: 100%;
+
+  @media (min-width: $desktop-breakpoint) {
+    max-width: 1272px;
+  }
 }
