@@ -12,6 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <script type="module" src="main.js" defer></script>
   </head>
   <body>
     <header class="header-container">
@@ -27,28 +28,13 @@
       </div>
     </header>
     <main class="main-container">
-      <div>ALPHA</div>
-      <ul class="card-list">
-        <li class="card-item">
-          <img
-            class="card-img"
-            src="https://images.unsplash.com/photo-1481349518771-20055b2a7b24?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cmFuZG9tfGVufDB8fDB8fHww&w=1000&q=80"
-            alt="#"
-          />
-          <div class="card-desc-container">
-            <div class="card-prod-desc">
-              <p class="product-name">Product name</p>
-              <p class="product-name">Product price</p>
-            </div>
-            <div class="card-condition-desc">
-              <p class="product-condition">Condition</p>
-              <p class="product-used">Slightly used</p>
-            </div>
-          </div>
-          <button class="add-to-card-btn">Add to card</button>
-        </li>
+      <div class="alert-container">
+        <img class="alert-icon" src="/images/alert.svg" alt="!" />
+        <p>ALPHA</p>
+        <custom-element>Important info regarding our service</custom-element>
+      </div>
+      <ul id="card-list" class="card-list">
       </ul>
-
       <div class="pagination">1 2 3 4 5 .... 25</div>
     </main>
     <footer class="footer-container">
