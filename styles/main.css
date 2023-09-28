@@ -58,14 +58,30 @@ button:hover {
 
 .header-content-container {
   display: flex;
+  padding-left: 69px;
+  padding-right: 24px;
   justify-content: space-between;
   margin: auto;
-  max-width: 1330px;
+  max-width: 1272px;
+}
+@media (min-width: 1512px) {
+  .header-content-container {
+    margin-left: 0;
+    margin-right: 0;
+    margin: auto;
+    padding-left: 0;
+  }
 }
 
 .logo-container {
   gap: 12px;
   align-items: flex-start;
+  position: relative;
+}
+
+.logo-image {
+  left: -57px;
+  position: absolute;
 }
 
 .shopping-container {
@@ -117,9 +133,7 @@ button:hover {
 .alert-container {
   display: flex;
   border-radius: 4px;
-  padding-top: 24px;
-  padding-bottom: 24px;
-  padding-left: 24px;
+  padding: 24px 24px 24px 24px;
   background-color: #000000;
   color: #ffffff;
   align-items: center;
@@ -129,6 +143,22 @@ button:hover {
 
 .alert-icon {
   margin-right: 6px;
+}
+
+.alert-alpha {
+  margin-right: 48px;
+}
+
+.alert-extra-div {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.alert-text {
+  font-size: 14px;
+  font-weight: 500;
 }
 
 .main-container {

@@ -1,9 +1,7 @@
 .alert-container {
   display: flex;
   border-radius: 4px;
-  padding-top: 24px;
-  padding-bottom: 24px;
-  padding-left: 24px;
+  padding: 24px 24px 24px 24px;
   background-color: $primary-color;
   color: $btn-text-color;
   align-items: center;
@@ -12,5 +10,20 @@
 }
 
 .alert-icon {
-    margin-right: 6px;
+  margin-right: 6px;
+}
+
+.alert-alpha {
+  margin-right: 48px;
+}
+
+.alert-extra-div {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+.alert-text {
+  font-size: 14px;
+  font-weight: 500;
 }

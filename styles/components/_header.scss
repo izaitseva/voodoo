@@ -6,14 +6,29 @@
 
 .header-content-container {
   display: flex;
+  padding-left: 69px;
+  padding-right: 24px;
   justify-content: space-between;
   margin: auto;
-  max-width: 1330px;
+  max-width: 1272px;
+
+  @media (min-width: $desktop-breakpoint) {
+    margin-left: 0;
+    margin-right: 0;
+    margin: auto;
+    padding-left: 0;
+  }
 }
 
 .logo-container {
   gap: 12px;
   align-items: flex-start;
+  position: relative;
+}
+
+.logo-image {
+  left: -57px;
+  position: absolute;
 }
 
 .shopping-container {
