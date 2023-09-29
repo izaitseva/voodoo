@@ -35,17 +35,6 @@ li {
   list-style: none;
 }
 
-button {
-  background-color: #000000;
-  border-color: transparent;
-  color: #ffffff;
-  border-radius: 4px;
-  cursor: pointer;
-}
-button:hover {
-  background-color: #616161;
-}
-
 .main-container {
   width: 100%;
 }
@@ -100,6 +89,14 @@ button:hover {
   font-weight: 700;
   width: 101px;
   height: 38px;
+  background-color: #000000;
+  border-color: transparent;
+  color: #ffffff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.signiUp-btn:hover {
+  background-color: #616161;
 }
 
 .footer-container {
@@ -232,11 +229,17 @@ button:hover {
   height: 42px;
   align-items: center;
   text-align: center;
-  color: #ffffff;
-  background-color: #000000;
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
+  background-color: #000000;
+  border-color: transparent;
+  color: #ffffff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.add-to-cart-btn:hover {
+  background-color: #616161;
 }
 
 .pagination {
@@ -256,6 +259,14 @@ button:hover {
   font-size: 12px;
   padding: 8px 8px 8px 8px;
   color: #ffffff;
+}
+
+button {
+  background-color: transparent;
+  border-color: transparent;
+  color: #ffffff;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 .shopping-cart-container {
@@ -279,6 +290,10 @@ button:hover {
 }
 
 .card-product-container {
+  display: flex;
+}
+
+.product-add-remove-container {
   display: flex;
 }
 

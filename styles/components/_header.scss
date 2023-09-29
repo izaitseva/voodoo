@@ -42,4 +42,13 @@
   font-weight: 700;
   width: 101px;
   height: 38px;
+  background-color: $btn-bg-color;
+  border-color: transparent;
+  color: $btn-text-color;
+  border-radius: 4px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $hover-color;
+  }
 }

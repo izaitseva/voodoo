@@ -59,18 +59,6 @@ li {
   list-style: none;
 }
 
-button {
-  background-color: $btn-bg-color;
-  border-color: transparent;
-  color: $btn-text-color;
-  border-radius: 4px;
-  cursor: pointer;
-
-  &:hover {
-    background-color: $hover-color;
-  }
-}
-
 .main-container {
   width: 100%;
 
