@@ -8,7 +8,36 @@ function initAddToCartButtons() {
     btn.addEventListener("click", (event) => {
       const target = event.target;
       const parentLi = target.closest("li");
-      addToCart(parentLi.product);
+      const product = parentLi.product;
+      addToCart(product);
+
+      const addedToCart = document.getElementById("side-cart");
+      const li = document.createElement("li");
+      li.classList.add("side-cart__item");
+
+      const Image =
+        product.images.length > 0
+          ? product.images[0].src
+          : "/images/no-image.png";
+
+      li.innerHTML = `
+      <div class="card-product-container">
+        <img class="side-cart__img" src="${Image}" alt="img" />
+        <div class="cart-info">
+          <h2 class="product-name">${product.title}</h2>
+          <p class="product-price">${product.variants[0].price}</p>
+          <div class="product-add-remove-container">
+            <button>+</button>
+            <p>1</p>
+            <button>-</button>
+          </div>
+        </div>
+      </div>
+      <button class="remove-product-btn">
+        <img src="/images/trash-bin.svg" alt="img" />
+      </button>
+      `;
+      addedToCart.appendChild(li);
     });
   }
 }

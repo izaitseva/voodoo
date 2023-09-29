@@ -27,6 +27,8 @@ function addToCart(product) {
 
 function removeFromCart() {}
 
-function changeQuantity() {}
+function changeQuantity() {
+    
+}
 
 export { addToCart, removeFromCart, changeQuantity, getCart };
