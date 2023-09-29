@@ -50,4 +50,20 @@ async function renderProducts() {
   initAddToCartButtons();
 }
 
+function toggleSideBar() {
+  const sidebar = document.getElementById("sidebar");
+  sidebar.classList.toggle("open");
+}
+
+function initCartBtn() {
+  document.getElementById("cartBtn").addEventListener("click", () => {
+    toggleSideBar();
+  });
+
+  document.getElementById("close-sidebar").addEventListener("click", () => {
+    toggleSideBar();
+  });
+}
+
+initCartBtn();
 renderProducts();

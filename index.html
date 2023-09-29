@@ -27,7 +27,7 @@
           <img src="/images/logoText.svg" alt="logo text" />
         </div>
         <div class="shopping-container">
-          <a href="cart.html">
+          <a href="javascript:void(0)" id="cartBtn">
             <img src="/images/shoppingCart.svg" alt="shopping cart" />
           </a>
           <button class="signiUp-btn">Sign-up</button>
@@ -47,6 +47,42 @@
       <ul id="cart-list" class="cart-list"></ul>
       <div class="pagination">1 2 3 4 5 .... 25</div>
     </main>
+    <aside id="sidebar" class="shopping-cart-sidebar">
+      <div class="shopping-cart-container">
+        <div class="cart-header">
+          <h1>Shopping Cart</h1>
+          <img
+            id="close-sidebar"
+            class="close-cart-icon"
+            src="/images/close-cart.svg"
+            alt="X"
+          />
+        </div>
+        <ul class="side-cart">
+          <li class="side-cart__item">
+            <div class="card-product-container">
+              <img class="side-cart__img" alt="img" />
+              <div class="cart-info">
+                <h2 class="product-name">Product Name</h2>
+                <p class="product-price">Price</p>
+                <div class="product-add-remove-container">
+                  <button>+</button>
+                  <p>1</p>
+                  <button>-</button>
+                </div>
+              </div>
+            </div>
+            <button class="remove-product-btn">
+              <img src="/images/trash-bin.svg" alt="img" />
+            </button>
+          </li>
+        </ul>
+        <div class="cart-total">
+          <p class="cart-total__header">total</p>
+          <p class="cart-total__price">price</p>
+        </div>
+      </div>
+    </aside>
     <footer class="footer-container">
       <div class="footer-content-container">
         <div class="logo-container">
