@@ -1,11 +1,14 @@
 import { fetchProducts } from "./js/api.js";
+import { addToCart } from "./js/cart.js";
 
 function initAddToCartButtons() {
-  let carts = document.querySelectorAll(".add-to-cart-btn");
+  let buttons = document.querySelectorAll(".add-to-cart-btn");
 
-  for (const cart of carts) {
-    cart.addEventListener("click", () => {
-      console.log("add to cart");
+  for (const btn of buttons) {
+    btn.addEventListener("click", (event) => {
+      const target = event.target;
+      const parentLi = target.closest("li");
+      addToCart(parentLi.product);
     });
   }
 }
@@ -18,8 +21,7 @@ async function renderProducts() {
   products.forEach((product) => {
     const li = document.createElement("li");
     li.classList.add("cart-item");
-    li.setAttribute("data-product-id", product.id);
-    console.log(product);
+    li.product = product;
 
     const Image =
       product.images.length > 0
