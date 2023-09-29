@@ -4,8 +4,38 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Store</title>
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="/JS/store.js"></script>
   </head>
   <body>
-    <h1>Shopping Cart</h1>
+    <div class="shopping-cart-container">
+      <div class="cart-header">
+        <h1>Shopping Cart</h1>
+        <img class="close-cart-icon" src="/images/close-cart.svg" alt="X" />
+      </div>
+      <ul class="side-cart">
+        <li class="side-cart__item">
+          <div class="card-product-container">
+            <img class="side-cart__img" />
+            <div class="cart-info">
+              <h2 class="product-name">Product Name</h2>
+              <p class="product-price">Price</p>
+              <div>+ 1 -</div>
+            </div>
+          </div>
+          <img src="/images/trash-bin.svg" />
+        </li>
+      </ul>
+      <div class="cart-total">
+        <p class="cart-total__header">total</p>
+        <p class="cart-total__price">price</p>
+      </div>
+    </div>
   </body>
 </html>
