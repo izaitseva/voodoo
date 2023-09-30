@@ -16,19 +16,20 @@ function addToCart(product) {
   if (cartItem) {
     cartItem.amount += 1;
   } else {
-    currentCart.push({
+    cartItem = {
       amount: 1,
       product,
-    });
+    };
+
+    currentCart.push(cartItem);
   }
 
   setItem(LSKey, currentCart);
+  return cartItem;
 }
 
 function removeFromCart() {}
 
-function changeQuantity() {
-    
-}
+function changeQuantity() {}
 
 export { addToCart, removeFromCart, changeQuantity, getCart };
